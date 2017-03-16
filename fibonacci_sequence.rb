@@ -14,7 +14,7 @@ require 'pry'
 #  puts numbers
 
 def fibonacci(x, y)
-  numbers = [0, 1]
+  numbers = [x, y]
 
   until numbers.length == 25
     x = numbers[-1]
