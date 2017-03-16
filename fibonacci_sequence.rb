@@ -3,13 +3,26 @@
 
 #NOTE: define a method so I can pass in the first two numbers of the sequence. also, find out which numbers are prime.
 require 'pry'
+#numbers = [0, 1]
+#sum = nil
 
-numbers = [0, 1]
-sum = nil
+# until numbers.length == 25
+#   sum = numbers[-1] + numbers[-2]
+#   numbers.push(sum)
+#   #binding.pry
+# end
+#  puts numbers
 
-until numbers.length == 25
-  sum = numbers[-1] + numbers[-2]
-  numbers.push(sum)
-  #binding.pry
+def fibonacci(x, y)
+  numbers = [0, 1]
+
+  until numbers.length == 25
+    x = numbers[-1]
+    y = numbers[-2]
+    sum = x + y
+    numbers.push(sum)
+  end
+  puts numbers
 end
- puts numbers
+
+fibonacci(0, 1)
