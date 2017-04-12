@@ -20,7 +20,8 @@ class AllergyScaleTest < Minitest::Test
   def test_calcualted_score
     a = AllergyScale.new(34)
 
-    
+    results = ["chocolate", "peanuts"]
+    assert_equal results, calc_results(score)
   end
 
 end
