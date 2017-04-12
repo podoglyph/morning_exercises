@@ -11,10 +11,7 @@ class RPN
 
   def calc(user_input)
     parse_input(user_input)
-    # numbers.each do |x|
-    #   if x.is_a Integer
-    #
-    # end
+
   end
 
   def parse_input(user_input)
@@ -29,11 +26,7 @@ class RPN
 
   def numberize(parsed_input)
     numbers = []
-    operator = parsed_input[1]
-    numbers << parsed_input.first.to_i
-    numbers << operator
-    numbers << parsed_input.last.to_i
-    numbers
+    numbers = parsed_input.map
   end
 
 end
